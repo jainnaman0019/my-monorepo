@@ -6,7 +6,7 @@ export default function api_data(){
     const [data,setdata]=useState<any>(null);
 
     useEffect(()=>{
-        fetch("http://localhost:3002/")
+      fetch("https://my-monorepo-api.onrender.com/")
         .then((res)=>res.json())
         .then((data)=>setdata(data))
         .catch((err)=>console.log(err));
